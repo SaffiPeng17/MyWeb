@@ -2,12 +2,25 @@
 <html>
   <!-- HEAD -->
   <head>
-      <title>Saffi's Intro.</title>
-      <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>Saffi's Intro.</title>
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script: JavaScript -->
+    <script language="javascript">
+      document.onmousedown = disableclick;
+      status = "Right Click Disabled.";
+      function disableclick(event) {
+        if(event.button == 2) {
+          alert(status);
+          return false;
+        }
+      }
+    </script>
   </head>
 
   <!-- BODY -->
-  <body style="margin-top:15px; margin-left:15px;">
+  <body oncopy="return false" oncut="return false" onpaste="return false" oncontextmenu="return false" style="margin-top:15px; margin-left:15px;">
     <!-- Image -->
     <div style="position:absolute;">
       <img src="me.jpg" alt="It's me" style="width:143px; height;190px;">
