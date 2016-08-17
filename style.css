@@ -1,0 +1,13 @@
+/*** My CSS ***/
+.prof{ position: relative; letter-spacing: .5px; padding-top: 5px; padding-left:15px; }
+.prof_b{ position: relative; letter-spacing: .5px; padding-top: 5px; font-weight:bolder; }
+.prof_bu{ position: relative; letter-spacing: .5px; padding-top: 3px; font-weight:bolder; text-decoration:underline; }
+
+.pad_t10{ padding-top:10px; }
+.pad_t15{ padding-top:15px; }
+.pad_t25{ padding-top:25px; }
+
+.pad_l10{ padding-left:10px; }
+.pad_l15{ padding-left:15px; }
+.pad_l48{ padding-left:48px; }
+.pad_l159{ padding-left:159px; }
