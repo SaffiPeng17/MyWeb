@@ -1,7 +1,7 @@
 /*** My CSS ***/
 .prof{ position: relative; letter-spacing: .5px; padding-top: 5px; padding-left:15px; }
-.prof_b{ position: relative; letter-spacing: .5px; padding-top: 5px; font-weight:bolder; }
-.prof_bu{ position: relative; letter-spacing: .5px; padding-top: 3px; font-weight:bolder; text-decoration:underline; }
+.prof_b{ position: relative; letter-spacing: .5px; font-weight:bolder; }
+.prof_bu{ position: relative; letter-spacing: .5px; font-weight:bolder; text-decoration:underline; }
 
 .pad_t10{ padding-top:10px; }
 .pad_t15{ padding-top:15px; }
@@ -9,5 +9,76 @@
 
 .pad_l10{ padding-left:10px; }
 .pad_l15{ padding-left:15px; }
+.pad_l23{ padding-left:23px; }
+.pad_l36{ padding-left:36px; }
 .pad_l48{ padding-left:48px; }
-.pad_l159{ padding-left:159px; }
+
+.img-cropper {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    top: 30px;
+}
+
+img {
+    display: inline;
+    margin: 20 auto;
+    height: auto;
+    width: 100%;
+}
+
+body {
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #C7CB85;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    font-weight: bolder;
+}
+
+.basic {
+	width: 400px;
+    height: 50px;
+    position: absolute;
+    left: 250px;
+    top: 30px;
+    color: #502419;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+.skills {
+	width: 400px;
+    height: 50px;
+    position: absolute;
+    background: #EBBE9B;
+    border-radius: 25px;
+    padding: 20px;
+    left: 250px;
+    top: 150px;
+}
+
+.table {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: .7px;
+    line-height: 23px;
+}
+
+
+
+
+

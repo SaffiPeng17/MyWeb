@@ -8,61 +8,106 @@
     <link rel="stylesheet" href="style.css">
     <!-- Script: JavaScript -->
     <script language="javascript">
-      document.onmousedown = disableclick;
-      status = "Right Click Disabled.";
-      function disableclick(event) {
-        if(event.button == 2) {
-          alert(status);
-          return false;
-        }
-      }
+
     </script>
   </head>
 
   <!-- BODY -->
-  <body oncopy="return false" oncut="return false" onpaste="return false" oncontextmenu="return false" style="margin-top:15px; margin-left:15px;">
-    <!-- Image -->
-    <div style="position:absolute;">
-      <img src="me.jpg" alt="It's me" style="width:143px; height;190px;">
-    </div>
-    <!-- Profile Content -->
-    <div style="position:absolute; width:400px; height:174px; padding-top:9px; left:170px;">
-      <div class="prof_b">Saffi Peng</div>
-      <div class="prof_b">HsinChu, Taiwan</div>
-      <div class="prof_b">
-        <a href="https://www.linkedin.com/in/SaffPeng">LinkedIn</a>
-        <span>,  </span>
-        <a href="https://github.com/SaffiPeng17">GitHub</a>
-        <span>,  </span>
-        <a href="mailto:greenb17@gmail.com">E-Mail</a>
-        <span>,  </span>
-        <a href="https://saffipeng17.gitbooks.io/swift-2-to-swift-3/content/">GitBook</a>
+  <body>
+    <div style="position:relative; height:200px">
+      <!-- Image -->
+      <div class="img-cropper">
+        <img src="me.jpg" alt="It's me">
       </div>
-      <div class="prof_bu pad_t25">Summary</div>
-      <div class="prof">4+ years coding experience on Job.</div>
-      <div class="prof">Familiar with C, C++, Qml, JavaScript.</div>
+      <!-- Profile Content -->
+      <div class="basic">
+        <div class="name">Saffi Peng</div>
+        <div>HsinChu, Taiwan</div>
+        <div>5+ years coding experience on Job.</div>
+        <div>Familiar with Swift, JavaScript, Qml, C, C++.</div>
+        <div style="line-height: 45px">
+          <a href="https://www.linkedin.com/in/SaffPeng">LinkedIn</a>
+          <span>,  </span>
+          <a href="https://github.com/SaffiPeng17">GitHub</a>
+          <span>,  </span>
+          <a href="mailto:greenb17@gmail.com">E-Mail</a>
+          <span>,  </span>
+          <a href="https://saffipeng17.gitbooks.io/swift-2-to-swift-3/content/">GitBook</a>
+        </div>
+      </div>
     </div>
     <!-- Work List -->
-    <div style="position:absolute; width:600px; height:300px; top:215px;">
-      <div class="prof_bu">Work List</div>
-      <div class="prof_b pad_t15 pad_l15">2016/9~&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;LoFTech, Software Engineer, Swift 3</div>
-      <div class="prof pad_l159">Develop Mac Widget application</div>
-      <div class="prof_b pad_t15 pad_l15">2015/7~2016/8&emsp;&nbsp;&nbsp;Lite-On, Software Engineer, Qml/JavaScript/C++</div>
-      <div class="prof pad_l159">Develop GUI functions on Biological Test Device</div>
-      <div class="prof_b pad_t15 pad_l15">2014/8~2015/5&emsp;&nbsp;&nbsp;Coordiwise, Software Engineer, C</div>
-      <div class="prof pad_l159">Develop Bluetooth Firmware on CSR chip</div>
-      <div class="prof_b pad_t15 pad_l15">2013/12~2014/7&emsp;Netronix, Software Engineer, C++</div>
-      <div class="prof pad_l159">Develop a Public Test Tool for testing all productions</div>
-      <div class="prof_b pad_t15 pad_l15">2011/8~2013/10&emsp;Altek, Software Engineer, C</div>
-      <div class="prof pad_l159">Develop GUI functions on Camera</div>
+    <div class="table" style="position:relative; left: 250px">
+      <!-- <div class="prof_bu">Work List</div> -->
+      <table>
+        <thead>
+          <th class="prof_bu" style="text-align: left;">Work List</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="prof_b pad_t15 pad_l15">2016/9~</td>
+            <td class="prof_b pad_t15 pad_l23">LoFTech, Software Engineer, Swift 3</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="prof pad_l36">Develop Mac Widget application</td>
+          </tr>
+          <tr>
+            <td class="prof_b pad_t15 pad_l15">2015/7~2016/8</td>
+            <td class="prof_b pad_t15 pad_l23">Lite-On, Software Engineer, Qml/JavaScript/C++</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="prof pad_l36">Develop GUI functions on Biological Test Device</td>
+          </tr>
+          <tr>
+            <td class="prof_b pad_t15 pad_l15">2014/8~2015/5</td>
+            <td class="prof_b pad_t15 pad_l23">Coordiwise, Software Engineer, C</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="prof pad_l36">Develop Bluetooth Firmware on CSR chip</td>
+          </tr>
+          <tr>
+            <td class="prof_b pad_t15 pad_l15">2013/12~2014/7</td>
+            <td class="prof_b pad_t15 pad_l23">Netronix, Software Engineer, C++</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="prof pad_l36">Develop a Public Test Tool for testing all productions</td>
+          </tr>
+          <tr>
+            <td class="prof_b pad_t15 pad_l15">2011/8~2013/10</td>
+            <td class="prof_b pad_t15 pad_l23">Altek, Software Engineer, C</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="prof pad_l36">Develop GUI functions on Camera</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <!-- Educational -->
-    <div style="position:absolute; width:600px; height:174px; top:540px;">
-      <div class="prof_bu">Educational</div>
-      <div class="prof_b pad_t15 pad_l15">Feng Chia University, Taiwan</div>
-      <div class="prof pad_l48">Computer Science and Information Engineering, Master's degree</div>
-      <div class="prof_b pad_t15 pad_l15">Asia University, Taiwan</div>
-      <div class="prof pad_l48">Computer Science and Information Engineering, Bachelor's degree</div>
+    <div class="table" style="position:relative; left: 250px">
+    <table>
+        <thead>
+          <th class="prof_bu" style="text-align: left;">Educational</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="prof_b pad_t15 pad_l15">Feng Chia University, Taiwan</td>
+          </tr>
+          <tr>
+            <td class="prof pad_l48">Computer Science and Information Engineering, Master's degree</td>
+          </tr>
+          <tr>
+            <td class="prof_b pad_t15 pad_l15">Asia University, Taiwan</td>
+          </tr>
+          <tr>
+            <td class="prof pad_l48">Computer Science and Information Engineering, Bachelor's degree</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 
